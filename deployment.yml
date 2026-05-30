@@ -21,10 +21,10 @@ spec:
         - containerPort: 8000
         volumeMounts:
         - name: ebs-volume
-          mountPath: /app/backend/demo-data   # inside container
+          mountPath: /demo-data   # inside container
       volumes:
       - name: ebs-volume
         hostPath:
           path: /mnt/ebs                      # path on EC2 host
-          type: Directory
+          type: DirectoryOrCreate
 
