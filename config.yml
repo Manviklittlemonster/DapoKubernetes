@@ -12,7 +12,16 @@ nodes:
     protocol: TCP
 - role: worker
   image: kindest/node:v1.35.0
+  extraMounts:
+  - hostPath: /mnt/ebs
+    containerPath: /mnt/ebs
 - role: worker
   image: kindest/node:v1.35.0
+  extraMounts:
+  - hostPath: /mnt/ebs
+    containerPath: /mnt/ebs
 - role: worker
   image: kindest/node:v1.35.0
+  extraMounts:
+  - hostPath: /mnt/ebs
+    containerPath: /mnt/ebs
